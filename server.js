@@ -123,7 +123,13 @@ const server = http.createServer(async (req, res) => {
     }
     const extension = path.extname(filePath).toLowerCase();
     if (extension === '.html') {
-      const html = fs.readFileSync(filePath, 'utf8').replace('</head>', `  ${socialMeta(req, url)}\n</head>`);
+      const pagePath = url.pathname === '/' ? '/index.html' : url.pathname;
+      let headAdditions = socialMeta(req, url);
+      if (pagePath === '/comunidad.html') {
+        const initialFeed = JSON.stringify({posts:readData().posts.map(post => present(post, ''))}).replace(/</g, '\\u003c');
+        headAdditions += `\n  <script id="community-initial-data" type="application/json">${initialFeed}</script>`;
+      }
+      const html = fs.readFileSync(filePath, 'utf8').replace('</head>', `  ${headAdditions}\n</head>`);
       res.writeHead(200, {'Content-Type':MIME[extension],'Cache-Control':'no-cache'});
       return res.end(html);
     }
