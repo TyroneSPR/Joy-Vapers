@@ -2,6 +2,8 @@
 
 Sitio web oficial de Joy Vapers Iquitos, con catálogo, compra por WhatsApp, novedades y foro comunitario persistente.
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2FTyroneSPR%2FJoy-Vapers)
+
 ## Ejecutar localmente
 
 En Windows, abre `INICIAR-SITIO.bat`. También puedes ejecutar:
