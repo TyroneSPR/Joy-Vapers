@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Joy Community — comparte, descubre novedades y vive la experiencia Joy Vapers.">
+  <title>Comunidad | Joy Vapers</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="comunidad">
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="JOY VAPERS N7B.png" alt="Joy Vapers"></a>
+    <button class="menu" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    <nav><a href="index.html">Inicio</a><a href="productos.html">Productos</a><a href="novedades.html">Novedades</a><a class="active" href="comunidad.html">Comunidad</a><a class="nav-cta" href="productos.html">Explorar <span>↗</span></a></nav>
+  </header>
+  <main>
+    <section class="community-hero">
+      <div><p class="eyebrow"><i></i> JOY COMMUNITY / EN LÍNEA</p><h1>ESTE ES<br>TU <em>ESPACIO.</em></h1></div>
+      <div class="community-intro"><span class="live-dot"></span><strong>LA COMUNIDAD ESTÁ ACTIVA</strong><p>Comparte tu experiencia, reacciona, conversa y descubre antes que nadie lo que viene.</p></div>
+    </section>
+    <section class="community-layout section">
+      <aside class="community-panel">
+        <p class="eyebrow"><i></i> COMPARTE ALGO</p>
+        <h2>¿QUÉ ESTÁS<br>VAPEANDO?</h2>
+        <form id="post-form">
+          <label for="community-name">Tu nombre o correo electrónico</label>
+          <input id="community-name" maxlength="60" required placeholder="NOMBRE O CORREO ELECTRÓNICO">
+          <label for="community-post">Tu publicación</label>
+          <textarea id="community-post" maxlength="500" required placeholder="CUÉNTALE ALGO A LA COMUNIDAD..."></textarea>
+          <button class="button button-light" type="submit">Publicar <span>↗</span></button>
+          <small>No necesitas crear una cuenta. Si usas tu correo, aparecerá parcialmente oculto.</small>
+        </form>
+      </aside>
+      <div class="community-feed-wrap">
+        <div class="feed-head"><div><p class="eyebrow"><i></i> AHORA EN JOY</p><h2>EL FEED.</h2></div><span id="post-count">03 PUBLICACIONES</span></div>
+        <div id="community-feed" class="community-feed" aria-live="polite"></div>
+      </div>
+    </section>
+    <section class="joy-requests section">
+      <div class="requests-heading">
+        <p class="eyebrow"><i></i> TU VOZ IMPORTA</p>
+        <h2>PETICIONES<br>PARA <em>JOY.</em></h2>
+        <p>¿Quieres un nuevo sabor, una dinámica, un producto o una mejora? Déjanos tu petición. El equipo de Joy podrá leerla directamente.</p>
+      </div>
+      <div class="requests-board">
+        <form id="request-form">
+          <label for="request-author">Tu nombre o correo electrónico</label>
+          <input id="request-author" maxlength="60" required placeholder="NOMBRE O CORREO ELECTRÓNICO">
+          <label for="request-text">Tu petición para Joy</label>
+          <textarea id="request-text" maxlength="500" required placeholder="¿QUÉ TE GUSTARÍA PEDIRLE A JOY?"></textarea>
+          <button class="button button-dark" type="submit">Enviar petición <span>↗</span></button>
+        </form>
+        <div class="request-email-info">
+          <span>DESTINO DIRECTO</span>
+          <strong>JOYVAPERSIQUITOS<br>@GMAIL.COM</strong>
+          <p>Prepararemos el correo automáticamente con tu nombre en el asunto y tu petición en el mensaje. Solo tendrás que confirmar el envío desde tu aplicación de correo.</p>
+          <div><i></i> PETICIONES PRIVADAS</div>
+        </div>
+      </div>
+    </section>
+    <section class="community-news section">
+      <div><span>PRÓXIMAMENTE</span><h2>EVENTOS,<br>DINÁMICAS Y<br><em>BENEFICIOS.</em></h2></div>
+      <p>Estamos preparando experiencias exclusivas, votaciones de nuevos sabores y beneficios especiales para quienes forman parte de Joy Community.</p>
+    </section>
+  </main>
+  <footer><a class="footer-brand" href="index.html">JOY<br>VAPERS<span>®</span></a><div><p>NAVEGA</p><a href="productos.html">Productos</a><a href="novedades.html">Novedades</a><a href="comunidad.html">Comunidad</a></div><div><p>SÍGUENOS</p><a href="#">Instagram</a><a href="#">TikTok</a></div><small>Solo para mayores de 18 años.<br>© 2026 Joy Vapers.</small></footer>
+  <div class="age-note">+18</div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

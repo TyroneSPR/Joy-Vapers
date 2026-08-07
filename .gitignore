@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.*
+*.log
+*.tmp
+preview-*.png
+*-qa.png
+*-check.png
+.DS_Store
+Thumbs.db

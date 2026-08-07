@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": "joy-bienvenida",
+      "name": "JOY VAPERS",
+      "text": "Bienvenidos al foro oficial. Aquí podrán conversar, responder y descubrir primero nuestras novedades de tienda.",
+      "createdAt": "2026-08-06T18:40:00.000Z",
+      "official": true,
+      "likes": [],
+      "comments": []
+    },
+    {
+      "id": "joy-sabores",
+      "name": "JOY VAPERS",
+      "text": "Queremos escucharlos: ¿qué combinación de sabores les gustaría encontrar próximamente en nuestra tienda?",
+      "createdAt": "2026-08-06T16:12:00.000Z",
+      "official": true,
+      "likes": [],
+      "comments": []
+    }
+  ]
+}
