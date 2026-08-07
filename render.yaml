@@ -1,17 +1,23 @@
+# Servicio principal del sitio y del foro.
 services:
   - type: web
+    # Este nombre se conserva para mantener joy-vapers.onrender.com.
     name: joy-vapers
     runtime: node
+    # El plan Starter permite conservar el disco del foro.
     plan: starter
     region: oregon
     buildCommand: npm install
     startCommand: npm start
+    # Render comprueba aquí que el servidor siga funcionando.
     healthCheckPath: /health
+    # Publica automáticamente cada actualización de GitHub.
     autoDeployTrigger: commit
     envVars:
+      # Carpeta donde se guardan publicaciones, respuestas y likes.
       - key: DATA_DIR
         value: /var/data
     disk:
-      name: joy-vapers-data
+      name: datos-foro-joy-vapers
       mountPath: /var/data
       sizeGB: 1

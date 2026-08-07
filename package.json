@@ -1,5 +1,5 @@
 {
-  "name": "joy-vapers-web",
+  "name": "sitio-joy-vapers",
   "version": "1.0.0",
   "private": true,
   "description": "Sitio oficial y comunidad de Joy Vapers Iquitos",
@@ -8,6 +8,6 @@
   },
   "scripts": {
     "start": "node server.js",
-    "check": "node --check server.js && node --check assets/js/app.js"
+    "verificar": "node --check server.js && node --check assets/js/app.js"
   }
 }
